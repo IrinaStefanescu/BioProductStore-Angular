@@ -1,0 +1,21 @@
+<div class="container">
+    <div id="contact" action="" method="post" style="font-family: monospace; height: 500px;">
+        <h3 style="text-align: center; padding-bottom: 50px;">Contact </h3>
+        <fieldset style="padding-bottom: 30;">
+            <input placeholder="Subject..." type="text" tabindex="1" required autofocus style="font-size: 16px; font-family: monospace;">
+        </fieldset>
+        <textarea [(ngModel)]="ContactForm.message" placeholder="Type your message here...." tabindex="5" required style="font-size: 16px; font-family: monospace;"></textarea>
+        <label for="category" style="font-size: 18px; padding-top: 40px;">Category:</label>
+        <select id="category" name="category" style="font-size: 16px;">
+          <option value="value1" style="text-align: center;">Food</option>
+          <option value="value2" style="text-align: center;">Vitamins</option>
+          <option value="value2" style="text-align: center;">Gluten free</option>
+          <option value="value2" style="text-align: center;">Means</option>
+          <option value="value2" style="text-align: center;">Supplements</option>
+      </select>
+        <br><br>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" (click)="sendForm()" data-submit="...Sending">Contact us</button>
+        </fieldset>
+    </div>
+</div>
