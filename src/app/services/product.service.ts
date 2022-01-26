@@ -33,7 +33,12 @@ getProduct(id: string) : Observable<RegisterProductDTO> {
 
 //GET ALL
 getAllProducts() : Observable<RegisterProductDTO[]> {
-  return this.http.get<RegisterProductDTO[]>('https://localhost:44397/allProducts', {headers:this.setHeaders()});
+  return this.http.get<RegisterProductDTO[]>('https://localhost:44397/api/Product/allProducts', {headers:this.setHeaders()});
+}
+
+//GET AL BY CATEGORY ID
+getAllProductsByCategoryId(id: string) : Observable<RegisterProductDTO[]>{
+  return this.http.get<RegisterProductDTO[]>('https://localhost:44397/api/Product/allProductsByCategoryId/' + id)
 }
 
 //UPDATE

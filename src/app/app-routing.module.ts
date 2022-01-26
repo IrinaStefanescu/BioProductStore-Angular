@@ -8,7 +8,7 @@ import { TermsConditionsComponent } from './terms-conditions/terms-conditions.co
 const routes: Routes = [
   //{ path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent},
-  { path: 'category-details', component: CategoryDetailsComponent },
+  { path: 'category-details/:id', component: CategoryDetailsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'terms', component: TermsConditionsComponent },
   { path: '**', component: HomeComponent},
