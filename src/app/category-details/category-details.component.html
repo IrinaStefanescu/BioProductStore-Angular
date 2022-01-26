@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div style="padding-top: 50px;">
+                <h1 style="font-style: italic">"Let your food be your medicine, and your food your food."</h1>
+                <ul>
+                    <section id="listing">
+                        <form class="form-inline active-cyan-2 col-4 col-sm-4 px-0 mt-2">
+                            <input class="form-control form-control-sm mr-3 w-100" type="text" placeholder="Search" aria-label="Search" name="search" autocomplete="off" />
+                            <i aria-hidden="true"></i>
+                        </form>
+                        <div class="row">
+                            <div *ngFor="let category of categories.id" class="listing-column col-lg-4 col-md-6">
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>{{product.name}}</h3>
+                                        <img class="img" src="https://i0.wp.com/reviveyouthandfamily.org/wp-content/uploads/2016/11/house-placeholder.jpg?resize=300%2C213&ssl=1" alt="img3">
+                                    </div>
+                                    <div class="card-body">
+                                        <h2>{{product.description}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<router-outlet></router-outlet>
