@@ -1,0 +1,85 @@
+* {
+    font-family: monospace;
+}
+
+#listing {
+    padding: 70px;
+    text-align: center;
+}
+
+.listing-column {
+    padding: 3% 2%;
+    border-radius: 30px;
+}
+
+h2 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-size: 120% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(45deg, black, rgb(47, 46, 46), gray, lightgray);
+    animation: .8s shake forwards 4;
+}
+
+@keyframes shake {
+    0% {
+        transform: skewX(-15deg);
+    }
+    5% {
+        transform: skewX(15deg);
+    }
+    10% {
+        transform: skewX(-15deg);
+    }
+    15% {
+        transform: skewX(15deg);
+    }
+    20% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+.img {
+    height: 150px;
+    width: 180px;
+}
+
+form {
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.social-icon {
+    text-align: center;
+    color: black;
+    padding-top: 70px;
+}
+
+.social-icon a {
+    padding-left: 10px;
+}
+
+.footer-basic {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
