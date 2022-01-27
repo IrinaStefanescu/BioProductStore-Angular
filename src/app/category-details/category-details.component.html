@@ -8,7 +8,7 @@
                 <ul>
                     <section id="listing">
                         <form class="form-inline active-cyan-2 col-4 col-sm-4 px-0 mt-2">
-                            <input class="form-control form-control-sm mr-3 w-100" type="text" placeholder="Search" aria-label="Search" name="search" autocomplete="off" />
+                            <input class="form-control form-control-sm mr-3 w-175" type="text" placeholder="Search" aria-label="Search" name="search" autocomplete="off" />
                             <i aria-hidden="true"></i>
                         </form>
                         <div class="row" style="padding-top: 20px;">
@@ -22,6 +22,8 @@
                                     </div>
                                     <div class="card-body">
                                         <p>{{product.description}}</p>
+                                        <button mat-raised-button routerLink="">Create order</button>
+                                        <button mat-raised-button>Delete product</button>
                                     </div>
                                 </div>
                             </div>
